@@ -313,16 +313,9 @@ def extract_prices_and_currency(price_text, country_details):
 
     # Fallback for formats like "HK$81/month or HK$810/year"
     if not prices or len(prices) < 2:
-         simple_matches = re.findall(r'([A-Z]{2,3}\$?|[€£$¥])\s?[\d.,]+\s?/(month|year)', cleaned_text, re.IGNORECASE)
+         simple_matches = re.findall(r'([A-Z]{2,3}\$?|[€£$¥])\s?([\d.,]+)\s?/(month|year)', cleaned_text, re.IGNORECASE)
          if len(simple_matches) >= 1 :
-             for match in simple_matches:
-                 if len(match) == 3:
-                     curr_sym, amount_str, period_str = match
-                 elif len(match) == 2:
-                     curr_sym, amount_str = match
-                     period_str = ""  # 如果没找到周期，就给它一个空的默认值
-                 else:
-                     continue  # 如果匹配格式不对，就跳过这一条
+             for curr_sym, amount_str, period_str in simple_matches:
                  period_key = 'monthly' if 'month' in period_str.lower() else 'annual'
                  if period_key not in prices:
                      decimal_price = clean_and_convert_price(amount_str, country_formatting)
