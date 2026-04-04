@@ -148,7 +148,21 @@ jobs:
           echo "❌ 汇率转换文件未生成"
           exit 1
         fi
-        
+
+    - name: Detect price changes and generate changelog
+      id: price_changes
+      if: steps.scraper.outputs.scraper_status == 'success' && steps.converter.outputs.converter_status == 'success'
+      run: |
+        echo "🔍 开始检测 Disney+ 价格变化..."
+        python disney_price_change_detector.py
+
+        # 检查脚本执行结果并设置默认值
+        if [ ! -f "$GITHUB_OUTPUT" ] || ! grep -q "changes_count=" "$GITHUB_OUTPUT" 2>/dev/null; then
+          echo "changes_count=0" >> $GITHUB_OUTPUT
+          echo "summary_file=" >> $GITHUB_OUTPUT
+        fi
+      continue-on-error: true
+
     - name: Archive data with timestamp
       if: steps.scraper.outputs.scraper_status == 'success' && steps.converter.outputs.converter_status == 'success'
       run: |
@@ -164,20 +178,6 @@ jobs:
           cp disneyplus_prices_processed.json "${ARCHIVE_DIR}/disneyplus_prices_processed_${TIMESTAMP}.json"
         fi
         echo "归档完成，文件保存在: ${ARCHIVE_DIR}"
-        
-    - name: Detect price changes and generate changelog
-      id: price_changes
-      if: steps.scraper.outputs.scraper_status == 'success' && steps.converter.outputs.converter_status == 'success'
-      run: |
-        echo "🔍 开始检测 Disney+ 价格变化..."
-        python disney_price_change_detector.py
-        
-        # 检查脚本执行结果并设置默认值
-        if [ ! -f "$GITHUB_OUTPUT" ] || ! grep -q "changes_count=" "$GITHUB_OUTPUT" 2>/dev/null; then
-          echo "changes_count=0" >> $GITHUB_OUTPUT
-          echo "summary_file=" >> $GITHUB_OUTPUT
-        fi
-      continue-on-error: true
         
     - name: Check for changes
       id: check_changes

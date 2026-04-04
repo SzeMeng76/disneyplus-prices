@@ -321,6 +321,16 @@ def extract_prices_and_currency(price_text, country_details):
                      decimal_price = clean_and_convert_price(amount_str, country_formatting)
                      if decimal_price is not None: prices[period_key] = decimal_price
 
+    # Additional fallback for formats like "1,670 JPY/month" or "16,700 JPY/year" (price before currency)
+    if not prices or len(prices) < 2:
+         reverse_matches = re.findall(r'([\d.,]+)\s+([A-Z]{2,3})/(month|year)', cleaned_text, re.IGNORECASE)
+         if len(reverse_matches) >= 1:
+             for amount_str, curr_code, period_str in reverse_matches:
+                 period_key = 'monthly' if 'month' in period_str.lower() else 'annual'
+                 if period_key not in prices:
+                     decimal_price = clean_and_convert_price(amount_str, country_formatting)
+                     if decimal_price is not None: prices[period_key] = decimal_price
+
     # Fallback for single price entries
     if not prices:
         single_price_match = re.search(r'(?:[A-Z]{2,3}\$?|[€£$¥])\s*([\d.,]+)|([\d.,]+)\s*(?:[A-Z]{2,3}\$?|[€£$¥])', cleaned_text, re.IGNORECASE)
