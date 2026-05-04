@@ -16,6 +16,7 @@ class DisneyPriceChangeDetector:
     def __init__(self):
         self.current_file = "disneyplus_prices_processed.json"
         self.changelog_file = "CHANGELOG.md"
+        self.summary_dir = "summaries"
         
     def find_latest_archive_file(self) -> Optional[str]:
         """查找最新的归档价格文件"""
@@ -273,11 +274,15 @@ class DisneyPriceChangeDetector:
             'removed_plans': len([c for c in changes if c['type'] == 'removed_plan']),
             'changes': changes
         }
-        
-        summary_file = f"disney_price_changes_summary_{datetime.now().strftime('%Y%m%d_%H%M%S')}.json"
+
+        summary_file = os.path.join(
+            self.summary_dir,
+            f"disney_price_changes_summary_{datetime.now().strftime('%Y%m%d_%H%M%S')}.json",
+        )
+        os.makedirs(self.summary_dir, exist_ok=True)
         with open(summary_file, 'w', encoding='utf-8') as f:
             json.dump(summary, f, ensure_ascii=False, indent=2)
-        
+
         print(f"✅ 变化摘要已生成: {summary_file}")
         return summary_file
     
@@ -307,7 +312,11 @@ class DisneyPriceChangeDetector:
                 'changes': [],
                 'note': '首次运行或无历史数据，跳过价格对比'
             }
-            summary_file = f"disney_price_changes_summary_{datetime.now().strftime('%Y%m%d_%H%M%S')}.json"
+            summary_file = os.path.join(
+                self.summary_dir,
+                f"disney_price_changes_summary_{datetime.now().strftime('%Y%m%d_%H%M%S')}.json"
+            )
+            os.makedirs(self.summary_dir, exist_ok=True)
             with open(summary_file, 'w', encoding='utf-8') as f:
                 json.dump(summary, f, ensure_ascii=False, indent=2)
             print(f"✅ 生成初始摘要文件: {summary_file}")
