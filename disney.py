@@ -98,8 +98,15 @@ async def fetch_record_id(browser, locale_code: str) -> str:
     try:
         await page.goto(
             f'https://help.disneyplus.com/{locale_code}/article/disneyplus-price',
-            wait_until='networkidle',
+            wait_until='domcontentloaded',
+            timeout=30000,
         )
+        # 等待直到拦截到 articleId，最多等10秒
+        for _ in range(20):  # 20次 * 500ms = 10秒
+            if article_id_holder["id"]:
+                break
+            await page.wait_for_timeout(500)
+
         if not article_id_holder["id"]:
             raise ValueError(f"未拦截到 loadArticle 请求 for locale {locale_code}")
         return article_id_holder["id"]
