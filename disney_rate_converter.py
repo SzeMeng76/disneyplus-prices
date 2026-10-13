@@ -135,7 +135,7 @@ COUNTRY_INFO = {
     "TN": {"name_en": "Tunisia","name_cn": "突尼斯","currency": "TND","symbol": "TND","decimal": ".","thousand": ","},
     "ZA": {"name_en": "South Africa","name_cn": "南非","currency": "ZAR","symbol": "ZAR","decimal": ".","thousand": ","},
     # Southeast Asia
-    "ID": {"name_en": "Indonesia","name_cn": "印度尼西亚","currency": "IDR","symbol": "Rp","decimal": ".","thousand": ","},
+    "ID": {"name_en": "Indonesia","name_cn": "印度尼西亚","currency": "IDR","symbol": "Rp","decimal": ",","thousand": "."},
     "MY": {"name_en": "Malaysia","name_cn": "马来西亚","currency": "MYR","symbol": "RM","decimal": ".","thousand": ","},
     "PH": {"name_en": "Philippines","name_cn": "菲律宾","currency": "PHP","symbol": "₱","decimal": ".","thousand": ","},
     "TH": {"name_en": "Thailand","name_cn": "泰国","currency": "THB","symbol": "THB","decimal": ".","thousand": ","}
@@ -326,16 +326,23 @@ def extract_prices_and_currency(price_text, country_details):
         print(f"警告：国家/地区 {country_details.get('name_en')} 最终无法确定货币代码。")
         return {}, None
 
-    # --- Price Extraction (remains the same as V4) ---
+    # --- Price Extraction ---
+    # Updated to support currency symbols before numbers (e.g., "Rp 65.000", "RM 54.90")
     patterns = {
-        'monthly': r'(?:monthly|mensual|mensuel|maandelijks|monatlich|month|/month)\s*:?\s*([€£$¥]?\s?[\d.,]+(?:\s?[A-Z]{3}\$?)?)',
-        'annual':  r'(?:annual|anual|annuel|jaarlijks|jährlich|year|/year)\s*:?\s*([€£$¥]?\s?[\d.,]+(?:\s?[A-Z]{3}\$?)?)'
+        'monthly': r'(?:monthly|mensual|mensuel|maandelijks|monatlich|month|/month)\s*:?\s*(?:([A-Z]{2,3}|[€£$¥₱]|Rp|RM)\s?)?([\d.,]+)',
+        'annual':  r'(?:annual|anual|annuel|jaarlijks|jährlich|year|/year)\s*:?\s*(?:([A-Z]{2,3}|[€£$¥₱]|Rp|RM)\s?)?([\d.,]+)'
     }
     cleaned_text = price_text.replace('\n', ' ').strip()
     for period, pattern in patterns.items():
         matches = re.findall(pattern, cleaned_text, re.IGNORECASE)
         if matches:
-            raw_amount = matches[-1].strip()
+            # matches is now a list of tuples: (currency_symbol, amount)
+            # Take the last match and extract the amount part
+            match_tuple = matches[-1]
+            if isinstance(match_tuple, tuple):
+                raw_amount = match_tuple[1].strip()  # Get the amount (second element)
+            else:
+                raw_amount = match_tuple.strip()
             decimal_price = clean_and_convert_price(raw_amount, country_formatting)
             if decimal_price is not None: prices[period] = decimal_price
 
