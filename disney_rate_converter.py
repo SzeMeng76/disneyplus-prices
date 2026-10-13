@@ -116,7 +116,29 @@ COUNTRY_INFO = {
     "HT": {"name_en": "Haiti","name_cn": "海地","currency": "USD","symbol": "$","decimal": ",","thousand": "."},
     "SV": {"name_en": "El Salvador","name_cn": "萨尔瓦多","currency": "USD","symbol": "$","decimal": ".","thousand": ","},
     "JP": {"name_en": "Japan","name_cn": "日本","currency": "JPY","symbol": "¥","decimal": ".","thousand": ","},
-    "HK": {"name_en": "Hong Kong","name_cn": "中国香港","currency": "HKD","symbol": "HK$","decimal": ".","thousand": ","}
+    "HK": {"name_en": "Hong Kong","name_cn": "中国香港","currency": "HKD","symbol": "HK$","decimal": ".","thousand": ","},
+    # Middle East and Africa
+    "AE": {"name_en": "United Arab Emirates","name_cn": "阿联酋","currency": "AED","symbol": "AED","decimal": ".","thousand": ","},
+    "BH": {"name_en": "Bahrain","name_cn": "巴林","currency": "USD","symbol": "$","decimal": ".","thousand": ","},
+    "DZ": {"name_en": "Algeria","name_cn": "阿尔及利亚","currency": "DZD","symbol": "DZD","decimal": ".","thousand": ","},
+    "EG": {"name_en": "Egypt","name_cn": "埃及","currency": "EGP","symbol": "EGP","decimal": ".","thousand": ","},
+    "IL": {"name_en": "Israel","name_cn": "以色列","currency": "ILS","symbol": "NIS","decimal": ".","thousand": ","},
+    "IQ": {"name_en": "Iraq","name_cn": "伊拉克","currency": "IQD","symbol": "IQD","decimal": ".","thousand": ","},
+    "JO": {"name_en": "Jordan","name_cn": "约旦","currency": "JOD","symbol": "JOD","decimal": ".","thousand": ","},
+    "KW": {"name_en": "Kuwait","name_cn": "科威特","currency": "USD","symbol": "$","decimal": ".","thousand": ","},
+    "LB": {"name_en": "Lebanon","name_cn": "黎巴嫩","currency": "USD","symbol": "$","decimal": ".","thousand": ","},
+    "MA": {"name_en": "Morocco","name_cn": "摩洛哥","currency": "MAD","symbol": "MAD","decimal": ".","thousand": ","},
+    "OM": {"name_en": "Oman","name_cn": "阿曼","currency": "USD","symbol": "$","decimal": ".","thousand": ","},
+    "PS": {"name_en": "Palestine","name_cn": "巴勒斯坦","currency": "USD","symbol": "$","decimal": ".","thousand": ","},
+    "QA": {"name_en": "Qatar","name_cn": "卡塔尔","currency": "QAR","symbol": "QAR","decimal": ".","thousand": ","},
+    "SA": {"name_en": "Saudi Arabia","name_cn": "沙特阿拉伯","currency": "SAR","symbol": "SAR","decimal": ".","thousand": ","},
+    "TN": {"name_en": "Tunisia","name_cn": "突尼斯","currency": "TND","symbol": "TND","decimal": ".","thousand": ","},
+    "ZA": {"name_en": "South Africa","name_cn": "南非","currency": "ZAR","symbol": "ZAR","decimal": ".","thousand": ","},
+    # Southeast Asia
+    "ID": {"name_en": "Indonesia","name_cn": "印度尼西亚","currency": "IDR","symbol": "Rp","decimal": ".","thousand": ","},
+    "MY": {"name_en": "Malaysia","name_cn": "马来西亚","currency": "MYR","symbol": "RM","decimal": ".","thousand": ","},
+    "PH": {"name_en": "Philippines","name_cn": "菲律宾","currency": "PHP","symbol": "₱","decimal": ".","thousand": ","},
+    "TH": {"name_en": "Thailand","name_cn": "泰国","currency": "THB","symbol": "THB","decimal": ".","thousand": ","}
 }
 
 
@@ -144,6 +166,12 @@ CURRENCY_SYMBOLS_TO_CODES = {
     'huf': 'HUF', 'jpy': 'JPY', 'mxn': 'MXN', 'nok': 'NOK', 'nzd': 'NZD', 'pen': 'PEN',
     'pln': 'PLN', 'ron': 'RON', 'sek': 'SEK', 'sgd': 'SGD', 'chf': 'CHF', 'twd': 'TWD',
     'try': 'TRY', 'krw': 'KRW',
+    # Middle East and Africa currencies
+    'aed': 'AED', 'dzd': 'DZD', 'egp': 'EGP', 'ils': 'ILS', 'nis': 'ILS', 'iqd': 'IQD',
+    'jod': 'JOD', 'mad': 'MAD', 'qar': 'QAR', 'sar': 'SAR', 'tnd': 'TND', 'zar': 'ZAR',
+    # Southeast Asia currencies
+    'idr': 'IDR', 'rp': 'IDR', 'myr': 'MYR', 'rm': 'MYR', 'php': 'PHP', '₱': 'PHP', 'thb': 'THB',
+    # Other symbols
     'lei': 'RON', 'kr': 'DKK', 'tl': 'TRY', 'zł': 'PLN', 'r$': 'BRL', 'ca$': 'CAD',
     'a$': 'AUD', 'hk$': 'HKD', 's$': 'SGD', 'mx$': 'MXN', 'nz$': 'NZD',
     'ntd': 'TWD', # Special mapping for Taiwan Dollar
