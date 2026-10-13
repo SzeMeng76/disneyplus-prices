@@ -16006,6 +16006,264 @@
 
 ### 2026年10月
 
+## 2026-10-13 11:41:35
+
+📊 **变化概览**: 61 项变化
+- 📈 涨价: 2 个套餐
+- 🆕 新增: 59 个套餐
+
+### 📈 价格上涨
+
+- **印度尼西亚 (ID) - Disney+ Standard（月付）**
+  - 原价: ¥0.02 | 现价: ¥24.27
+  - 涨幅: ¥24.25 (+121250.0%)
+  - 当地价格: IDR 65000 IDR
+
+- **印度尼西亚 (ID) - Disney+ Premium（月付）**
+  - 原价: ¥0.04 | 现价: ¥44.43
+  - 涨幅: ¥44.39 (+110975.0%)
+  - 当地价格: IDR 119000 IDR
+
+### 🆕 新增套餐
+
+- **埃及 (EG) - Disney+ Premium（年付）**
+  - 价格: ¥216.17
+  - 当地价格: EGP 1700 EGP
+
+- **伊拉克 (IQ) - Disney+ Premium（年付）**
+  - 价格: ¥440.75
+  - 当地价格: IQD 99990 IQD
+
+- **印度尼西亚 (ID) - Disney+ Standard（年付）**
+  - 价格: ¥168.01
+  - 当地价格: IDR 450000 IDR
+
+- **印度尼西亚 (ID) - Disney+ Premium（年付）**
+  - 价格: ¥298.32
+  - 当地价格: IDR 799000 IDR
+
+- **约旦 (JO) - Disney+ Premium（年付）**
+  - 价格: ¥471.17
+  - 当地价格: JOD 49.900 JOD
+
+- **菲律宾 (PH) - Disney+ Standard（年付）**
+  - 价格: ¥243.96
+  - 当地价格: PHP 2290 PHP
+
+- **菲律宾 (PH) - Disney+ Premium（年付）**
+  - 价格: ¥516.68
+  - 当地价格: PHP 4850 PHP
+
+- **马来西亚 (MY) - Disney+ Standard（年付）**
+  - 价格: ¥352.10
+  - 当地价格: MYR 214.90 MYR
+
+- **马来西亚 (MY) - Disney+ Premium（年付）**
+  - 价格: ¥474.98
+  - 当地价格: MYR 289.90 MYR
+
+- **阿根廷 (AR) - Disney+ Standard（年付）**
+  - 价格: ¥573.82
+  - 当地价格: ARS 129999 ARS
+
+- **阿根廷 (AR) - Disney+ Premium（年付）**
+  - 价格: ¥882.80
+  - 当地价格: ARS 199999 ARS
+
+- **安提瓜和巴布达 (AG) - Disney+ Premium（年付）**
+  - 价格: ¥897.01
+  - 当地价格: USD 133.99 USD
+
+- **巴哈马 (BS) - Disney+ Premium（年付）**
+  - 价格: ¥897.01
+  - 当地价格: USD 133.99 USD
+
+- **巴巴多斯 (BB) - Disney+ Premium（年付）**
+  - 价格: ¥897.01
+  - 当地价格: USD 133.99 USD
+
+- **伯利兹 (BZ) - Disney+ Premium（年付）**
+  - 价格: ¥897.01
+  - 当地价格: USD 133.99 USD
+
+- **多米尼克 (DM) - Disney+ Premium（年付）**
+  - 价格: ¥897.01
+  - 当地价格: USD 133.99 USD
+
+- **多米尼加共和国 (DO) - Disney+ Standard（年付）**
+  - 价格: ¥615.84
+  - 当地价格: USD 91.99 USD
+
+- **多米尼加共和国 (DO) - Disney+ Premium（年付）**
+  - 价格: ¥897.01
+  - 当地价格: USD 133.99 USD
+
+- **萨尔瓦多 (SV) - Disney+ Standard（年付）**
+  - 价格: ¥615.84
+  - 当地价格: USD 91.99 USD
+
+- **萨尔瓦多 (SV) - Disney+ Premium（年付）**
+  - 价格: ¥897.01
+  - 当地价格: USD 133.99 USD
+
+- **格林纳达 (GD) - Disney+ Premium（年付）**
+  - 价格: ¥897.01
+  - 当地价格: USD 133.99 USD
+
+- **圭亚那 (GY) - Disney+ Premium（年付）**
+  - 价格: ¥897.01
+  - 当地价格: USD 133.99 USD
+
+- **牙买加 (JM) - Disney+ Premium（年付）**
+  - 价格: ¥897.01
+  - 当地价格: USD 133.99 USD
+
+- **圣基茨和尼维斯 (KN) - Disney+ Premium（年付）**
+  - 价格: ¥897.01
+  - 当地价格: USD 133.99 USD
+
+- **圣卢西亚 (LC) - Disney+ Premium（年付）**
+  - 价格: ¥897.01
+  - 当地价格: USD 133.99 USD
+
+- **圣文森特和格林纳丁斯 (VC) - Disney+ Premium（年付）**
+  - 价格: ¥897.01
+  - 当地价格: USD 133.99 USD
+
+- **特立尼达和多巴哥 (TT) - Disney+ Premium（年付）**
+  - 价格: ¥897.01
+  - 当地价格: USD 133.99 USD
+
+- **智利 (CL) - Disney+ Standard（年付）**
+  - 价格: ¥626.31
+  - 当地价格: CLP 91390 CLP
+
+- **智利 (CL) - Disney+ Premium（年付）**
+  - 价格: ¥918.25
+  - 当地价格: CLP 133990 CLP
+
+- **厄瓜多尔 (EC) - Disney+ Standard（年付）**
+  - 价格: ¥642.61
+  - 当地价格: USD 95.99 USD
+
+- **厄瓜多尔 (EC) - Disney+ Premium（年付）**
+  - 价格: ¥950.57
+  - 当地价格: USD 141.99 USD
+
+- **危地马拉 (GT) - Disney+ Standard（年付）**
+  - 价格: ¥642.61
+  - 当地价格: USD 95.99 USD
+
+- **危地马拉 (GT) - Disney+ Premium（年付）**
+  - 价格: ¥950.57
+  - 当地价格: USD 141.99 USD
+
+- **洪都拉斯 (HN) - Disney+ Standard（年付）**
+  - 价格: ¥642.61
+  - 当地价格: USD 95.99 USD
+
+- **洪都拉斯 (HN) - Disney+ Premium（年付）**
+  - 价格: ¥950.57
+  - 当地价格: USD 141.99 USD
+
+- **哥伦比亚 (CO) - Disney+ Standard（年付）**
+  - 价格: ¥650.26
+  - 当地价格: COP 309900 COP
+
+- **哥伦比亚 (CO) - Disney+ Premium（年付）**
+  - 价格: ¥965.00
+  - 当地价格: COP 459900 COP
+
+- **尼加拉瓜 (NI) - Disney+ Standard（年付）**
+  - 价格: ¥696.17
+  - 当地价格: USD 103.99 USD
+
+- **尼加拉瓜 (NI) - Disney+ Premium（年付）**
+  - 价格: ¥1010.82
+  - 当地价格: USD 150.99 USD
+
+- **巴拿马 (PA) - Disney+ Standard（年付）**
+  - 价格: ¥696.17
+  - 当地价格: USD 103.99 USD
+
+- **巴拿马 (PA) - Disney+ Premium（年付）**
+  - 价格: ¥1010.82
+  - 当地价格: USD 150.99 USD
+
+- **巴拉圭 (PY) - Disney+ Standard（年付）**
+  - 价格: ¥696.17
+  - 当地价格: USD 103.99 USD
+
+- **巴拉圭 (PY) - Disney+ Premium（年付）**
+  - 价格: ¥1010.82
+  - 当地价格: USD 150.99 USD
+
+- **委内瑞拉 (VE) - Disney+ Standard（年付）**
+  - 价格: ¥696.17
+  - 当地价格: USD 103.99 USD
+
+- **委内瑞拉 (VE) - Disney+ Premium（年付）**
+  - 价格: ¥1010.82
+  - 当地价格: USD 150.99 USD
+
+- **墨西哥 (MX) - Disney+ Standard（年付）**
+  - 价格: ¥795.56
+  - 当地价格: MXN 2169 MXN
+
+- **墨西哥 (MX) - Disney+ Premium（年付）**
+  - 价格: ¥1041.31
+  - 当地价格: MXN 2839 MXN
+
+- **玻利维亚 (BO) - Disney+ Standard（年付）**
+  - 价格: ¥696.17
+  - 当地价格: USD 103.99 USD
+
+- **玻利维亚 (BO) - Disney+ Premium（年付）**
+  - 价格: ¥1057.68
+  - 当地价格: USD 157.99 USD
+
+- **哥斯达黎加 (CR) - Disney+ Standard（年付）**
+  - 价格: ¥783.20
+  - 当地价格: USD 116.99 USD
+
+- **哥斯达黎加 (CR) - Disney+ Premium（年付）**
+  - 价格: ¥1064.37
+  - 当地价格: USD 158.99 USD
+
+- **列支敦士登 (LI) - Disney+ Standard（年付）**
+  - 价格: ¥1358.42
+  - 当地价格: CHF 169.00 CHF
+
+- **列支敦士登 (LI) - Disney+ Premium（年付）**
+  - 价格: ¥1888.13
+  - 当地价格: CHF 234.90 CHF
+
+- **瑞士 (CH) - Disney+ Standard（年付）**
+  - 价格: ¥1358.42
+  - 当地价格: CHF 169.00 CHF
+
+- **瑞士 (CH) - Disney+ Premium（年付）**
+  - 价格: ¥1880.89
+  - 当地价格: CHF 234.00 CHF
+
+- **乌拉圭 (UY) - Disney+ Standard（年付）**
+  - 价格: ¥729.64
+  - 当地价格: USD 108.99 USD
+
+- **乌拉圭 (UY) - Disney+ Premium（年付）**
+  - 价格: ¥1968.15
+  - 当地价格: USD 293.99 USD
+
+- **秘鲁 (PE) - Disney+ Standard（年付）**
+  - 价格: ¥81297.53
+  - 当地价格: PEN 41890 PEN
+
+- **秘鲁 (PE) - Disney+ Premium（年付）**
+  - 价格: ¥112155.27
+  - 当地价格: PEN 57790 PEN
+
+
+
 ## 2026-10-13 11:33:03
 
 📊 **变化概览**: 381 项变化
